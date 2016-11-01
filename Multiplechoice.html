@@ -1,0 +1,161 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Quizzes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"></script>
+  <link rel="stylesheet" href="yearproject.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="Index4.html">Quizzer</a>
+     </div>
+     <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="Index4.html">Home</a>
+          </li>
+          <li class="active">
+            <a href="Multiplechoice.html">Quizzes</a>
+          </li>
+          <li>
+            <a href="Userinput.html">User Input</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span class="caret"></span>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.apple.com/ipod/" target="_blank">Ipod</a></li>
+                <li><a href="http://www.apple.com/iphone/" target="_blank">Iphone</a></li>
+                <li><a href="http://www.apple.com/ipad/" target="_blank">Ipad</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Other Products</li>
+                <li><a href="http://www.apple.com/tv/" target="_blank">Itv</a></li>
+                <li><a href="http://www.apple.com/mac/" target="_blank">Imac</a></li>
+                <li><a href="http://www.apple.com/watch/" target="_blank">Iwatch</a></li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Honors Chemistry Midterm Review</h1>
+        <p class="lead">Multiple Choice Midterm Review for Honors Chemistry</p>
+      </div>
+
+    </div><!-- /.container -->
+
+    <div class="container">
+      <div class="row" id="main">
+        <div class="col-md-4">
+        <!-- Question number and overall progress -->
+        <p id="questionIndicator"></p>
+          <img class="fancybox" src="http://sciencenotes.org/wp-content/uploads/2013/06/PeriodicTable-NoBackground2.png" style="width: 100%"> 
+      </div>
+      <div class="col-md-8">
+        <!-- Question and choices -->
+        <p id="questionText"></p>
+        <div class="alert alert-danger">No selected response.</div>
+        <form>
+          <div class="radio">
+            <label><input type="radio" class="radioButton" name="optradio"><p id="choice1">Option 1</p></label> 
+          </div>
+          <div class="radio">
+            <label><input type="radio" class="radioButton" name="optradio"><p id="choice2">Option 2</p></label> 
+          </div>
+          <div class="radio">
+            <label><input type="radio" class="radioButton" name="optradio"><p id="choice3">Option 3</p></label> 
+          </div>          
+          <div class="radio">
+            <label><input type="radio" class="radioButton" name="optradio"><p id="choice4">Option 4</p></label> 
+          </div>
+          <button type="button" id="pq" class="btn btn-default" onclick="prevQ()">Previous Question</button>
+          <button type="button" id="nq" class="btn btn-default" onclick="buttonClicked()">Next Question</button>
+          <button type="button" style="display:none;"id="sq" class="btn btn-default" onclick="buttonClicked()">Submit</button>
+ <div class="modal fade" id="mm" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Incorrect Questions</h4>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+          <style>
+          .btn:focus {
+            outline: none !important;
+          }
+        </style>
+        </form>      
+      </div>
+    </div>
+
+
+    <div class="row" id="scoreReport">
+      <div class="col-md-6" id="totalScoreDiv">
+      </div>
+      <div class="col-md-6" id="bellChartDiv">
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="yearproject.js"></script>
+  
+
+</body></html>
