@@ -1,3 +1,5 @@
+var database = firebase.database();
+
 $(function() {
 
     $('#login-form-link').click(function(e) {
@@ -16,3 +18,25 @@ $(function() {
 	});
 
 });
+
+
+
+
+function signUp() {
+	var email = $("#email").val();
+	var password = $("#password").val();
+firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
+};
+function signIn() {
+	firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
+};
