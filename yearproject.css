@@ -3,6 +3,13 @@
   src: url(blzee.ttf);
 }
 
+.home-header{
+      width:100%;
+      min-height:800px;
+      background-image:url(education-ppt-background-study-time-for-education-ppt-backgrounds.jpg);
+      background-size:cover;
+}
+
 .button {
   background-color: #1B321D;
   color: white;
