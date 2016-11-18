@@ -24,7 +24,7 @@ $(function() {
 
 function signUp() {
 	var email = $("#email").val();
-	var password = $("#password").val();
+	var password = $("#password2").val();
 	console.log(email);
 	console.log(password);
 firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
