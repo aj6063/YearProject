@@ -25,12 +25,15 @@ $(function() {
 function signUp() {
 	var email = $("#email").val();
 	var password = $("#password").val();
+	console.log(email);
+	console.log(password);
 firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
   // Handle Errors here.
   var errorCode = error.code;
   var errorMessage = error.message;
   // ...
 	console.log(errorMessage);
+	
 }).then(function(e){
 	console.log("test");
 });
