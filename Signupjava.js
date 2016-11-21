@@ -38,11 +38,11 @@ firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(e
 	console.log("test");
 });
 };
-function signIn() {
+$("#login-submit").on("click", function() {
 	firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
   // Handle Errors here.
   var errorCode = error.code;
   var errorMessage = error.message;
   // ...
 });
-};
+});
