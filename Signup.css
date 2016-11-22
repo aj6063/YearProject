@@ -221,3 +221,6 @@ label {
   color: #fff;
   background-color: #2D3B55;
 }
+.col-xs-6{
+  padding:0 !important;
+}
