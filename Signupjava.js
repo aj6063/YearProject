@@ -22,7 +22,7 @@ $(function() {
 
 
 
-function signUp() {
+$(".signup-btn").on("click", function() {
 	var email = $("#email").val();
 	var password = $("#password2").val();
 	console.log(email);
@@ -37,7 +37,7 @@ firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(e
 }).then(function(e){
 	console.log("test");
 });
-};
+});
 $("#login-submit").on("click", function() {
 	firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
   // Handle Errors here.
