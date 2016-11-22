@@ -227,7 +227,7 @@ label {
   background:#2d3b55;  
 }
 .tabs a{
-  color:#666;
+  color:#666 !important;
 }
 .act a{
   color:white !important;
