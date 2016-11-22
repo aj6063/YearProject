@@ -19,7 +19,10 @@ $(function() {
 
 });
 
-
+$(".tabs").on("click",function(e){
+	$(".tabs").removeClass("act");
+	$(e.target).addClass("act");
+}
 
 
 $(".signup-btn").on("click", function() {
