@@ -223,6 +223,6 @@ label {
 .col-xs-6{
   padding:0 !important;
 }
-.active{
+.tabs < .active{
   background:#2d3b55;  
 }
