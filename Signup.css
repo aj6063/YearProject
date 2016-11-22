@@ -132,7 +132,6 @@ label {
 }
 .panel-login>.panel-heading .register {
   padding: 20px 30px;
-  background: #2d3b55;
   border-bottom-right-radius: 5px;
 }
 .panel-login>.panel-heading a{
@@ -223,4 +222,7 @@ label {
 }
 .col-xs-6{
   padding:0 !important;
+}
+.active{
+  background:#2d3b55;  
 }
