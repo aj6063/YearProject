@@ -226,6 +226,9 @@ label {
 .act{
   background:#2d3b55;  
 }
-.act a{
+.tabs a{
   color:#666;
+}
+.act a{
+  color:white !important;
 }
