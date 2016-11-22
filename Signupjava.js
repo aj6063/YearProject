@@ -25,7 +25,7 @@ $(".tabs").on("click",function(e){
 }
 
 
-$(".signup-btn").on("click", function() {
+$("register-submit").on("click", function() {
 	var email = $("#email").val();
 	var password = $("#password2").val();
 	console.log(email);
