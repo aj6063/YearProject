@@ -223,6 +223,9 @@ label {
 .col-xs-6{
   padding:0 !important;
 }
-.tabs < .active{
+.act{
   background:#2d3b55;  
+}
+.act a{
+  color:#666;
 }
