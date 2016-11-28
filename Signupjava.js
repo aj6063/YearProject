@@ -16,7 +16,7 @@ $(document).ready(function(){
 	console.log(getCookie("form"));
 	if (getCookie("form")==1)
 	{
-		$(".register").trigger();
+		$(".register").trigger("click");
 	}
 });
 var database = firebase.database();
