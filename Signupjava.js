@@ -61,7 +61,9 @@ firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(e
 });
 });
 $("#login-submit").on("click", function() {
-	firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+	var email = $("#username").val();
+	var password = $("#password").val();
+firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
   // Handle Errors here.
   var errorCode = error.code;
   var errorMessage = error.message;
