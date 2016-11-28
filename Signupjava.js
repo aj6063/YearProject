@@ -13,6 +13,7 @@ function getCookie(c_name) {
     return "";
 }
 $(document).ready(function(){
+	console.log(getCookie("form"));
 	if (parseInt(getCookie("form"))==1)
 	{
 		$(".register").trigger();
