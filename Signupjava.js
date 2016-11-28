@@ -19,7 +19,7 @@ $('.login').click(function(e) {
 $(".tabs").on("click",function(e){
 	$(".tabs").removeClass("act");
 	$(e.target).addClass("act");
-}
+});
 
 
 $("register-submit").on("click", function() {
