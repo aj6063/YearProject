@@ -14,7 +14,7 @@ function getCookie(c_name) {
 }
 $(document).ready(function(){
 	console.log(getCookie("form"));
-	if (parseInt(getCookie("form"))==1)
+	if (getCookie("form")==1)
 	{
 		$(".register").trigger();
 	}
