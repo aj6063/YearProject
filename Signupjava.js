@@ -16,7 +16,7 @@ $('.login').click(function(e) {
 });
 
 
-$(".tabs").on("click",function(e){
+$(".register, .login").on("click",function(e){
 	$(".login").removeClass("act");
 	$(".register").removeClass("act");
 	$(e.target).addClass("act");
