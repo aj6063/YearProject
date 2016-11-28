@@ -40,8 +40,8 @@
     <div class="row">
       </div>
       <div class="text-center">
-         <a href="signup.html"><button type="button" class="button"><i class="fa fa-google-plus"></i>Log in</button></a>
-         <a href="signup.html"><button type="button" class="button"><i class="fa fa-google-plus"></i>Sign up</button></a>
+         <a class="logg" href="#"><button type="button" class="button"><i class="fa fa-google-plus"></i>Log in</button></a>
+         <a class="signn" href="#"><button type="button" class="button"><i class="fa fa-google-plus"></i>Sign up</button></a>
       </div>
     </div>
   </div>
@@ -185,7 +185,15 @@ function createCookie(name,value,days) {
     document.cookie = name+"="+value+expires+"; path=/";
 }
 }
-  createCookie("form",1);
+  $(".logg").click(function(){
+     createCookie("form",0);
+    window.location = "https://aj6063.github.io/YearProject/signup.html";
+
+  });
+  $(".signn").click(function(){
+    createCookie("form",1);
+    window.location = "https://aj6063.github.io/YearProject/signup.html";
+  });
 </script>
 
     
