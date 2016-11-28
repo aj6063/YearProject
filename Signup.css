@@ -224,7 +224,8 @@ label {
   padding:0 !important;
 }
 .act{
-  background:#2d3b55;  
+  background:#2d3b55;
+  color:white !important;
 }
 .tabs a{
   color:#666 !important;
