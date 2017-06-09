@@ -28,7 +28,7 @@ $(".register, .login").on("click",function(e){
   $( document ).ready(function() {
 	  $("#uploadButton").hide();
 	  
-          document.getElementByID("upload").addEventListener('change', handleFileSelect, false);
+          document.getElementById("upload").addEventListener('change', handleFileSelect, false);
 });
 $("#filebtn").click(function(){
 	$("#file").click()
