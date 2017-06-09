@@ -233,11 +233,6 @@ label {
 .act a{
   color:white !important;
 }
-label.upload-group {
-  width: 100px;
-  height: 40px;
-  padding: 5 5 5 5;
-}
 input#file {
   width: 0.1px;
   height: 0.1px;
