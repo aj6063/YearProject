@@ -26,14 +26,14 @@ $(".register, .login").on("click",function(e){
 	$(e.target).addClass("act");
 });
   $( document ).ready(function() {
-	  $("uploadButton").hide();
+	  $("#uploadButton").hide();
 	  
           document.getElementByID("upload").addEventListener('change', handleFileSelect, false);
 });
 
 $("#file").on("change", function(event) {
   selectedFile = event.target.files[0];
-  $("uploadButton").show();
+  $("#uploadButton").show();
 });
     
 function uploadFile() {
