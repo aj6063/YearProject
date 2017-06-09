@@ -30,7 +30,9 @@ $(".register, .login").on("click",function(e){
 	  
           document.getElementByID("upload").addEventListener('change', handleFileSelect, false);
 });
-
+$("#filebtn").click(function(){
+	$("#file").click()
+}
 $("#file").on("change", function(event) {
   selectedFile = event.target.files[0];
   $("#uploadButton").show();
