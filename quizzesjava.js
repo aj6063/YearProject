@@ -25,16 +25,13 @@ $(".register, .login").on("click",function(e){
 	$(".register").removeClass("act");
 	$(e.target).addClass("act");
 });
-
-$( document ).ready(function() {
-  $("#uploadButton").hide()
-  $(".upload-group").hide()
   
   document.getElementByID("upload").addEventListener('change', handleFileSelect, false);
 });
 
 function showWelcomeContainer () {
 	$(".upload-group").show();
+	$("uploadButton").hide();
 };
 
 $("#file").on("change", function(event) {
