@@ -28,15 +28,6 @@ $(".register, .login").on("click",function(e){
 
 $( document ).ready(function() {
   document.getElementByID("upload").addEventListener('change', handleFileSelect, false);
-}); 
-
-$(".dropdown").on("hide.bs.dropdown", function(event){
-    var text = $(event.relatedTarget).text(); // Get the text of the element
-    firebase.database().ref('Users/' + user.uid).set({
-    name: user.displayName,
-    email: user.email,
-  });
-
 });
 
 $("#file").on("change", function(event) {
