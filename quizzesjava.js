@@ -3,6 +3,28 @@ provider.addScope('');
 var user;
 var selectedFile;
 
+$('.login').click(function(e) {
+		$("#login-form").delay(100).fadeIn(100);
+ 		$("#register-form").fadeOut(100);
+		$('#register-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+});
+	$('.register').click(function(e) {
+		$("#register-form").delay(100).fadeIn(100);
+ 		$("#login-form").fadeOut(100);
+		$('#login-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+});
+
+
+$(".register, .login").on("click",function(e){
+	$(".login").removeClass("act");
+	$(".register").removeClass("act");
+	$(e.target).addClass("act");
+});
+
 $( document ).ready(function() {
   document.getElementByID("upload").addEventListener('change', handleFileSelect, false);
 }); 
