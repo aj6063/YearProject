@@ -30,7 +30,6 @@ $(".register, .login").on("click",function(e){
 });
 
 function showWelcomeContainer () {
-	$(".upload-group").show();
 	$("uploadButton").hide();
 };
 
