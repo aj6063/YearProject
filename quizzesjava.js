@@ -25,13 +25,11 @@ $(".register, .login").on("click",function(e){
 	$(".register").removeClass("act");
 	$(e.target).addClass("act");
 });
-  
-  document.getElementByID("upload").addEventListener('change', handleFileSelect, false);
+  $( document ).ready(function() {
+	  $("uploadButton").hide();
+	  
+          document.getElementByID("upload").addEventListener('change', handleFileSelect, false);
 });
-
-function showWelcomeContainer () {
-	$("uploadButton").hide();
-};
 
 $("#file").on("change", function(event) {
   selectedFile = event.target.files[0];
