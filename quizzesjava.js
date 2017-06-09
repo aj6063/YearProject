@@ -4,18 +4,8 @@ var user;
 var selectedFile;
 
 $( document ).ready(function() {
-  $("#welcome").hide();
-  $("#uploadButton").hide();
-  $(".upload-group").hide();
   document.getElementByID("upload").addEventListener('change', handleFileSelect, false);
 }); 
-
-function showWelcomeContainer() {
-  $("#login").hide();
-  $("#welcome").show();
-  $(".upload-group").show();
-  $("#welcomeText").html(" Hello " + user.displayName);
-};
 
 $(".dropdown").on("hide.bs.dropdown", function(event){
     var text = $(event.relatedTarget).text(); // Get the text of the element
