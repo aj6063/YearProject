@@ -234,6 +234,8 @@ label {
   color:white !important;
 }
 label.upload-group {
+ width: 300px;
+ text-align: center;
  background-color: #E8E9EC;
     outline: none;
     color: #2D3B55;
