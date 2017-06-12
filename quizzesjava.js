@@ -27,8 +27,7 @@ $(".register, .login").on("click",function(e){
 });
   $( document ).ready(function() {
 	  $("#uploadButton").hide();
-	  
-          document.getElementById("upload").addEventListener('change', handleFileSelect, false);
+	  document.getElementById("upload").addEventListener('change', handleFileSelect, false);
 });
 $("#file").on("change", function(event) {
   selectedFile = event.target.files[0];
