@@ -233,6 +233,19 @@ label {
 .act a{
   color:white !important;
 }
+label.upload-group {
+ background-color: #E8E9EC;
+    outline: none;
+    color: #2D3B55;
+    font-size: 14px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+}
 input#file {
   width: 0.1px;
   height: 0.1px;
