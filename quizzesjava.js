@@ -31,7 +31,7 @@ $(".register, .login").on("click",function(e){
 });
 $("#file").on("change", function(event) {
   selectedFile = event.target.files[0];
-  $(".upload-group").hide;
+  $(".upload-group").hide();
   $("#uploadButton").show();
 });
     
