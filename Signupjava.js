@@ -35,6 +35,7 @@ $('.login').click(function(e) {
 		$('#login-form-link').removeClass('active');
 		$(this).addClass('active');
 		e.preventDefault();
+		window.location = "https://aj6063.github.io/YearProject/Quizzes.html"
 });
 
 
