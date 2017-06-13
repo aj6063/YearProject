@@ -26,7 +26,6 @@ $('.login').click(function(e) {
  		$("#register-form").fadeOut(100);
 		$('#register-form-link').removeClass('active');
 		$(this).addClass('active');
-		window.location.assign("https://aj6063.github.io/YearProject/Quizzes.html")
 		
 });
 	$('.register').click(function(e) {
@@ -34,7 +33,6 @@ $('.login').click(function(e) {
  		$("#login-form").fadeOut(100);
 		$('#login-form-link').removeClass('active');
 		$(this).addClass('active');
-		window.location.assign("https://aj6063.github.io/YearProject/Quizzes.html")
 });
 
 
@@ -45,7 +43,9 @@ $(".register, .login").on("click",function(e){
 	
 });
 
-
+$("#login-submit, #register-submit").on("click",function(){
+	window.location.assign("https://aj6063.github.io/YearProject/Quizzes.html")
+}
 $("register-submit").on("click", function() {
 	var email = $("#email").val();
 	var password = $("#password2").val();
